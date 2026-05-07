@@ -1,0 +1,7 @@
+variable "name" { type = string }
+variable "vpc_id" { type = string }
+variable "subnet_ids" { type = list(string) }
+variable "allowed_http_cidrs" {
+  type    = list(string)
+  default = ["0.0.0.0/0"]
+}
